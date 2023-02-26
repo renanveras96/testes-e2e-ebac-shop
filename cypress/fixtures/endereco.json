@@ -1,0 +1,65 @@
+[
+  {
+      "nome": "Ana",
+      "sobrenome": "Lucia",
+      "endereco": "Av. Paulista",
+      "pais": "Brasil",
+      "cidade": "São Paulo",
+      "estado": "São Paulo",
+      "cep": "01011010",
+      "telefone": "11900001111",
+      "email": "exemplo@ebac.com"
+  },
+
+  {
+      "nome": "João",
+      "sobrenome": "Silva",
+      "endereco": "Rua da Consolação",
+      "pais": "Brasil",
+      "cidade": "São Paulo",
+      "estado": "São Paulo",
+      "cep": "01302000",
+      "telefone": "11999998888",
+      "email": "joao.silva@ebac.com"
+  },
+
+  {
+      "nome": "Luciana",
+      "sobrenome": "Oliveira",
+      "endereco": "Rua Augusta",
+      "pais": "Brasil",
+      "cidade": "São Paulo",
+      "estado": "São Paulo",
+      "cep": "01301000",
+      "telefone": "11988887777",
+      "email": "luciana.oliveira@ebac.com"
+  },
+
+  {
+      "nome": "Pedro",
+      "sobrenome": "Ferreira",
+      "endereco": "Alameda Santos",
+      "pais": "Brasil",
+      "cidade": "São Paulo",
+      "estado": "São Paulo",
+      "cep": "01418000",
+      "telefone": "11977776666",
+      "email": "pedro.ferreira@ebac.com"
+  },
+
+  {
+      "nome": "Isabella",
+      "sobrenome": "Santos",
+      "endereco": "Rua das Flores",
+      "pais": "Brasil",
+      "cidade": "Belo Horizonte",
+      "estado": "Minas Gerais",
+      "cep": "30000000",
+      "telefone": "3133334444",
+      "email": "isabella.santos@abcinc.com"
+      }
+
+  
+
+
+]
