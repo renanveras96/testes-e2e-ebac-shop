@@ -21,20 +21,18 @@ describe('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
 
     it('Deve fazer um pedido na loja Ebac Shop de ponta a ponta', () => {
         
-        cy.addProdutos('Teton Pullover Hoodie', 'XS', 'Black', 2)
+        cy.addProdutos('Teton Pullover Hoodie', 'XS', 'Black', 1)
         cy.visit('/produtos/page/49')    
         cy.addProdutos('Thorpe Track Pant', 32, 'Black', 2)
         cy.visit('/produtos/page/49')
-        cy.addProdutos('Tiberius Gym Tank', 'M', 'Yellow', 5)
+        cy.addProdutos('Tiberius Gym Tank', 'M', 'Yellow', 3)
         cy.visit('/produtos/page/49')
-        cy.addProdutos('Torque Power Short', '36', 'Gray', 3)
+        cy.addProdutos('Torque Power Short', '36', 'Gray', 4)
 
         cy.get('.woocommerce-message > .button').click()
         cy.get('.checkout-button').click()
 
-        cy.get('#billing_first_name').clear().type('Renan')
-        cy.get('#billing_last_name').clear().type('Veras')
-       
+      
         dadosPage.Checkout( 
             
             dadosEndereco[1].nome,
@@ -51,7 +49,9 @@ describe('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
 
 
         cy.get('#terms').click()
-        cy.get('#place_order').click()
+        cy.get('#place_order').click( {force:true} )
+
+        cy.get('.woocommerce-notice').should('contain', 'Obrigado. Seu pedido foi recebido.')
 
         
         
